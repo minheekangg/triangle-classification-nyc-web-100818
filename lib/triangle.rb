@@ -7,6 +7,10 @@ class Triangle
     @s3 = s3
   end
 
+  def is_a_triangle?
+    triangle = [s1, s2, s3]
+
+
   def kind
     if s1 == s2 && s2 == s3
       return :equilateral
