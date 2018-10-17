@@ -10,6 +10,7 @@ class Triangle
   def is_a_triangle?
     triangle = [s1, s2, s3]
 
+end
 
   def kind
     if s1 == s2 && s2 == s3
