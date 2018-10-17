@@ -9,7 +9,7 @@ class Triangle
 
   def kind
     if s1 == s2 && s2 == s3
-      return equilateral
+      return :equilateral
     end
  #    self.partner = person
  #   if person.class != Person
