@@ -8,7 +8,8 @@ class Triangle
   end
 
   def kind
-    if
+    if s1 == s2 && s2 == s3
+      self.kind =
  #    self.partner = person
  #   if person.class != Person
  #     begin
