@@ -9,6 +9,12 @@ class Triangle
 
   def is_a_triangle?(s1, s2, s3)
     triangle = [s1, s2, s3].sort
+      if triangle[0] <= 0 || triangle[2] > triangle[0] + triangle[1]
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
+
 
   end
 
