@@ -16,8 +16,8 @@ class Triangle
   def kind
     if not_a_triangle
       raise TriangleError
-    rescue TriangleError => error
-      puts error.message
+    # rescue TriangleError => error
+    #   puts error.message
 
     elsif s1 == s2 && s2 == s3
       return :equilateral
