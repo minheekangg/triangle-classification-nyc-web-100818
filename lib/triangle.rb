@@ -7,14 +7,9 @@ class Triangle
     @s3 = s3
   end
 
-  def not_a_triangle(s1, s2, s3)
-    triangle = [s1, s2, s3].sort
-      if triangle[0] <= 0 || triangle[2] > triangle[0] + triangle[1]
-      end
-  end
 
   def kind
-    if not_a_triangle(s1, s2, s3)
+    if s1 + s2 >= s3 || s2 + s3 >= s1 || s3 + s1 >= s2 || s1 <=0 || s2 <= 0 || s3 <=0
           begin
             raise TriangleError
           # rescue TriangleError => error
