@@ -10,7 +10,12 @@ class Triangle
   def kind
     if s1 == s2 && s2 == s3
       return :equilateral
-    elsif
+    elsif s1 == s2 || s2 == s3 || s3 == s1
+      return :isosceles
+    else 
+      return :scalene
+    end
+      
  #    self.partner = person
  #   if person.class != Person
  #     begin
