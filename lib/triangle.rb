@@ -10,7 +10,6 @@ class Triangle
   def not_a_triangle(s1, s2, s3)
     triangle = [s1, s2, s3].sort
       if triangle[0] <= 0 || triangle[2] > triangle[0] + triangle[1]
-
       end
   end
 
