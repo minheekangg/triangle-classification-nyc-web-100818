@@ -17,8 +17,8 @@ class Triangle
     if not_a_triangle(s1, s2, s3)
           begin
             raise TriangleError
-          rescue TriangleError => error
-            puts error.message
+          # rescue TriangleError => error
+          #   puts error.message
           end
     elsif s1 == s2 && s2 == s3
       return :equilateral
