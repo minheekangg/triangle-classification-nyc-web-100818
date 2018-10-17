@@ -15,6 +15,7 @@ class Triangle
 
   def kind
     if not_a_triangle
+      begin
       raise TriangleError
     rescue TriangleError => error
       puts error.message
