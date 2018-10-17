@@ -12,8 +12,8 @@ class Triangle
     if s1 + s2 >= s3 || s2 + s3 >= s1 || s3 + s1 >= s2 || s1 <=0 || s2 <= 0 || s3 <=0
           begin
             raise TriangleError
-          # rescue TriangleError => error
-          #   puts error.message
+          rescue TriangleError => error
+            puts error.message
           end
     elsif s1 == s2 && s2 == s3
       return :equilateral
