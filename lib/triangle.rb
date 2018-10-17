@@ -17,6 +17,7 @@ class Triangle
     if not_a_triangle
       raise TriangleError
     rescue TriangleError => error
+    end
     #   puts error.message
 
     elsif s1 == s2 && s2 == s3
