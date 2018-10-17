@@ -1,6 +1,6 @@
 class Triangle
-  # write code here
   attr_accessor :side
+
   def initialize(*side)
     @side = side
   end
