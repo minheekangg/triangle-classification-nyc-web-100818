@@ -19,7 +19,6 @@ class Triangle
     rescue TriangleError => error
       puts error.message
     end
-
     elsif s1 == s2 && s2 == s3
       return :equilateral
     elsif s1 == s2 || s2 == s3 || s3 == s1
