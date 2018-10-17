@@ -24,7 +24,7 @@ class Triangle
     elsif
       return :scalene
     else
-      not_a_triangle
+      not_a_triangle(s1,s2,s3)
   end
 
  #    self.partner = person
