@@ -26,7 +26,7 @@ class Triangle
       return :isosceles
     else
       return :scalene
-
+    end
   end
 
  #    self.partner = person
