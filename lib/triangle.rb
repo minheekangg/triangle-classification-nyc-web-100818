@@ -8,7 +8,7 @@ class Triangle
   end
 
   def is_a_triangle?(s1, s2, s3)
-    triangle = [(s1), (s2), (s2)].sort
+    triangle = [s1, s2, s3].sort
 
   end
 
