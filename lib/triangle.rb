@@ -10,21 +10,24 @@ class Triangle
   def not_a_triangle(s1, s2, s3)
     triangle = [s1, s2, s3].sort
       if triangle[0] <= 0 || triangle[2] > triangle[0] + triangle[1]
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+
       end
   end
 
   def kind
-    if s1 == s2 && s2 == s3
+    if not_a_triangle(s1,s2,s3)
+      raise TriangleError
+    rescue TriangleError => error
+      puts error.message
+
+    elsif s1 == s2 && s2 == s3
       return :equilateral
     elsif s1 == s2 || s2 == s3 || s3 == s1
       return :isosceles
     elsif
       return :scalene
     else
-      not_a_triangle(s1,s2,s3)
+
   end
 
  #    self.partner = person
