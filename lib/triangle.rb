@@ -1,12 +1,12 @@
 class Triangle
   # write code here
-
+  attr_accessor :side
   def initialize(*side)
     @side = side
   end
 
   def kind
-    
+    if
  #    self.partner = person
  #   if person.class != Person
  #     begin
@@ -22,7 +22,7 @@ class Triangle
 
 
   class TriangleError < StandardError
-  
+
   end
 
 end
