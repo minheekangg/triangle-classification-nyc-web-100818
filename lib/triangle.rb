@@ -14,7 +14,7 @@ class Triangle
   end
 
   def kind
-    if not_a_triangle
+    if not_a_triangle(s1, s2, s3)
           begin
             raise TriangleError
           rescue TriangleError => error
