@@ -8,9 +8,9 @@ class Triangle
   end
 
   def is_a_triangle?
-    triangle = [s1, s2, s3]
+    triangle = [s1, s2, s3].sort
 
-end
+  end
 
   def kind
     if s1 == s2 && s2 == s3
