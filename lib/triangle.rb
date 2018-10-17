@@ -12,21 +12,11 @@ class Triangle
       return :equilateral
     elsif s1 == s2 || s2 == s3 || s3 == s1
       return :isosceles
-    else 
+    else
       return :scalene
     end
-      
- #    self.partner = person
- #   if person.class != Person
- #     begin
- #       raise PartnerError
- #     rescue PartnerError => error
- #         puts error.message
- #     end
- #   else
- #     person.partner = self
- #   end
- # end
+  end
+
   end
 
 
